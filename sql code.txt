@@ -1,0 +1,302 @@
+CREATE USER 'Project'@'localhost' IDENTIFIED BY 'Project';
+GRANT ALL PRIVILEGES ON *.* TO 'Project'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `teacher` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `student` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `password_reset_temp` (
+  `email` varchar(250) NOT NULL,
+  `key` varchar(250) NOT NULL,
+  `expDate` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `C-102` (
+`Day` varchar (100),
+`8.50 am - 9.40 am` varchar(500) ,
+`9.40 am - 10.30 am` varchar(500) ,
+`10.40 am - 11.30 am` varchar(500) ,
+`11.30 am - 12.20 pm` varchar(500) ,
+`12.20 pm - 01.10 pm` varchar(500) ,
+`01.40 pm - 02.30 pm` varchar(500) ,
+`02.30 pm - 03.20 pm` varchar(500) ,
+`3.20 pm - 04.10 pm` varchar(500) ,
+`04.10 pm - 05.00 pm` varchar(500) 
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+Insert into `C-102` VALUES ("Monday","PE III
+19CSE356 Social Network Analytics 
+Mr.Dayanand V (G1)","19CSE311 
+Computer Security 
+B.Tech - CSE - VI Sem - E 
+Ms. Neethu M R","19CSE312
+Distributed Systems 
+B.Tech - CSE - VI Sem - E 
+Dr.R.Karthi","19CSE332
+Information Security
+Dr.Pooja Mishra (G1)",NULL,NULL,"19CSE313
+Principles of Programming Languages Lab
+B.Tech-CSE-VI Sem- E
+Ms. D Bharathi Dr. R Gowtham Ms. Deepika T","19CSE313
+Principles of Programming Languages Lab
+B.Tech-CSE-VI Sem- E
+Ms. D Bharathi Dr. R Gowtham Ms. Deepika T",NULL);
+
+Insert into `C-102` VALUES ("Tuesday","19CSE314
+Software
+Engineering
+B.Tech - CSE VI
+Sem - E
+Dr. Sabarish. B. A","19CSE313
+Principles of
+Programming
+Languages
+B.Tech - CSE - VI
+Sem - E
+Ms.Bharathi D","19CSE311
+Computer Security
+B.Tech - CSE - VI
+Sem - E
+Ms. Neethu M R","Mentoring
+Ms. Bindu KR
+Ms. R R Sathiya",NULL,NULL,"19CSE312
+Distributed Systems Lab
+B.Tech - CSE - VI Sem -E
+Dr. R Karthi
+Dr. G Jeya Kumar
+Dr. M Senthilkumar","19CSE312
+Distributed Systems Lab
+B.Tech - CSE - VI Sem -E
+Dr. R Karthi
+Dr. G Jeya Kumar
+Dr. M Senthilkumar",NULL);
+
+Insert into `C-102` VALUES ("Wednesday","19CSE311
+Computer Security
+B.Tech - CSE - VI
+Sem - E
+Ms. Neethu M R","19CSE314
+Software
+Engineering
+B.Tech - CSE - VI
+Sem - E
+Dr. Sabarish. B. A","19CSE313
+Principles of
+Programming
+Languages
+B.Tech - CSE - VI
+Sem - E
+Ms.Bharathi D","PE III
+19CSE356
+Social Network
+Analytics
+Mr.Dayanand V
+(GI)",NULL,NULL,NULL,"19CSE332
+Information
+Security
+Dr.Pooja Mishra
+(GI)",NULL);
+
+Insert into `C-102` VALUES ("Thursday","19CSE314
+Software Engineering Lab
+B.Tech CSE- VI Sem - E
+Dr. B A Sabarish
+Ms. S Shanmuga Priya
+Ms. P Malathi","19CSE314
+Software Engineering Lab
+B.Tech CSE- VI Sem - E
+Dr. B A Sabarish
+Ms. S Shanmuga Priya
+Ms. P Malathi",NULL,"19CSE312
+Distributed Systems
+B.Tech - CSE - VI
+Sem - E
+Dr.R.Karthi",NULL,NULL,NULL,"PE Ill
+19CSE356
+Social Network
+Analytics
+Mr.Dayanand V
+(GI)",NULL);
+
+Insert into `C-102` VALUES ("Friday",NULL,"19CSE312
+Distributed Systems
+B.Tech - CSE - VI
+Sem - E
+Dr.R.Karthi","19CSE332
+Information
+Security
+Dr.Pooja Mishra
+(GI)",NULL,NULL,NULL,NULL,NULL,NULL);
+
+CREATE TABLE `C-103` (
+`Day` varchar (100),
+`8.50 am - 9.40 am` varchar(500) ,
+`9.40 am - 10.30 am` varchar(500) ,
+`10.40 am - 11.30 am` varchar(500) ,
+`11.30 am - 12.20 pm` varchar(500) ,
+`12.20 pm - 01.10 pm` varchar(500) ,
+`01.40 pm - 02.30 pm` varchar(500) ,
+`02.30 pm - 03.20 pm` varchar(500) ,
+`3.20 pm - 04.10 pm` varchar(500) ,
+`04.10 pm - 05.00 pm` varchar(500) 
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+Insert into `C-103` VALUES ("Monday","PE III
+19CSE356
+Social Network
+Analytics
+Ms.G.R.Ramya (G2)","19CSE313
+Principles of
+Programming
+Languages
+B.Tech - CSE - VI
+Sem - B
+Dr.Raghesh
+Krishnan K","19CSE314
+Software
+Engineering
+B.Tech - CSE - VI
+Sem - B
+Dr.Lalithamani N","19CSE332
+Information
+Security
+Ms. Neethu M R
+(G2)",NULL,"Mentoring
+B.Tech - CSE - VI
+Sem - B
+Dr. P. Bagavathi
+Sivakumar","19CSE312
+Distributed Systems Lab
+B.Tech- CSE-VI Sem- B
+Dr. Remya Krishnan P
+Mr. A K Sumesh
+Dr. Pooja Mishra","19CSE312
+Distributed Systems Lab
+B.Tech- CSE-VI Sem- B
+Dr. Remya Krishnan P
+Mr. A K Sumesh
+Dr. Pooja Mishra",NULL);
+
+Insert into `C-103` VALUES ("Tuesday","19CSE312
+istributed Systems
+B.Tech - CSE - VI
+Sem - B
+Dr. kemya Krishnan","19CSE311
+Computer Security
+B.Tech - CSE - VI
+Sem - B
+r.M. Senthilkumar","19CSE314
+Software
+Engineering
+B.Tech - CSE - VI
+Sem - B
+Dr.Lalithamani N",NULL,NULL,NULL,"19CSE314
+Software Engineering Lab
+B.Tech CSE- VI Sem - B
+Dr. N Lalithamani
+Dr. N Radhika
+Dr. N Harini","19CSE314
+Software Engineering Lab
+B.Tech CSE- VI Sem - B
+Dr. N Lalithamani
+Dr. N Radhika
+Dr. N Harini",NULL);
+
+Insert into `C-103` VALUES ("Wednesday",NULL,NULL,NULL,"PE III
+19CSE356
+Social Network
+Analytics
+s.G.R.Ramya (G2)",NULL,"19CSE312
+Distributed Systems
+B.Tech -CSE - VI
+Sem - B
+Dr. Remya Krishnan",NULL,"19CSE332
+Information
+Security
+B.Tech - CSE - VI
+Sem - Elective II
+Ms. Neethu M R
+(G2)",NULL);
+
+Insert into `C-103` VALUES ("Thursday","19CSE313
+Principles of Programming Languages
+Lab
+B.Tech - CSE - VI Sem - B
+Dr. Raghesh Krishnan K
+Dr. S Padmavathi
+Ms. Anupa Vijai","19CSE313
+Principles of Programming Languages
+Lab
+B.Tech - CSE - VI Sem - B
+Dr. Raghesh Krishnan K
+Dr. S Padmavathi
+Ms. Anupa Vijai","Mentoring
+B.Tech - CSE - VI
+Sem - B
+Ms. K Abirami","19CSE311
+Computer Security
+B.Tech -CSE - VI
+Sem - B
+Dr.M. Senthilkumar",NULL,NULL,NULL,"PE III
+19CSE356
+Social Network
+Analytics
+B.Tech - CSE - VI
+Sem - Elective III
+Ms.G.R.Ramya (62)",NULL);
+
+Insert into `C-103` VALUES ("Friday","19CSE313
+Principles of
+Programming
+Languages
+B.Tech -
+Sem - B
+Dr.Raghesh
+Krishnan K","19CSE311
+Computer Security
+B.Tech - CSE - VI
+Sem - B
+Dr.M. Senthilkumar","19CSE332
+Information
+Security
+Ms. Neethu M R
+(G2)","19CSE312
+Distributed Systems
+B.Tech - CSE - VI
+Sem - B
+Dr. Remya Krishnan",NULL,NULL,NULL,NULL,NULL);
+
+CREATE TABLE `pending_status` (
+`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+`username` varchar(200),
+`room` varchar(10),
+`Day` varchar (100),
+`Slot` varchar(500) ,
+`period` varchar (500),
+`status` varchar(50) 
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+

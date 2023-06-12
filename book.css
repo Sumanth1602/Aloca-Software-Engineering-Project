@@ -1,0 +1,82 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+font-family: "Poppins", sans-serif;
+}
+/* center box class */
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #dbb279c3;
+}
+
+
+  
+  .styled-dropdown {
+    font-size: 16px;
+    color: #333;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+  }
+  .styled-textarea{
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+  }
+  
+  .styled-dropdown option {
+    padding: 10px;
+  }
+  .box{
+  min-height: 300px;
+  /* width:100%; */
+  width: 500px;
+  margin: 30px;
+  background-color: rgb(242, 241, 241);
+  border-radius: 30px;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 3px rgb(68, 67, 67);
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  }
+  label{
+    font-size: 20px;
+    color: #333;
+    margin: 10px;
+    padding: 10px;
+  }
+  .btn{
+    margin-left: 5px;
+    font-size: 16px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #926930c3;
+    border: none;
+    cursor: pointer;
+  }
+  .heading{
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    
+  }
+  hr.new{
+    border: 1px solid black;
+    padding: 0px;
+  }
+
+
+

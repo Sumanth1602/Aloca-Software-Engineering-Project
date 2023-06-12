@@ -1,0 +1,96 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+font-family: "Poppins", sans-serif;
+padding: 20px 20px;
+font-size: 95.5%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 25px 0;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  th{
+    background-color: #926930c3;
+    color: #ffffff;
+    text-align: left;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px 15px;
+  }
+  tr {
+      border-bottom: 1px solid #dddddd;
+  }
+  
+  tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+  }
+  
+  tr:last-of-type {
+      border-bottom: 2px solid #926930c3;
+  }
+  
+  .styled-dropdown {
+    font-size: 16px;
+    color: #333;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+  }
+  
+  .styled-dropdown option {
+    padding: 10px;
+  }
+  .box{
+  min-height: 300px;
+  min-width: 1200px;
+  
+  margin: 10px auto 0px auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  }
+  label{
+    font-size: 20px;
+    color: #333;
+    margin: 10px;
+    padding: 10px;
+  }
+  .btn{
+    margin-left: 5px;
+    font-size: 16px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #926930c3;
+    border: none;
+    cursor: pointer;
+  }
+  .heading{
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    
+  }
+  hr.new{
+    border: 1px solid black;
+    padding: 0px;
+  }
+
+
