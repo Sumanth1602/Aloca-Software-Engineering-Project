@@ -69,7 +69,16 @@ display: none;
 
 
 
-
+.searchbar input {
+width: 250px;
+height: 42px;
+border-radius: 50px 0 0 50px;
+background-color: var(--background-color3);
+padding: 0 20px;
+font-size: 15px;
+outline: none;
+border: none;
+}
 .searchbtn {
 width: 50px;
 height: 42px;
@@ -117,7 +126,7 @@ height: 42px;
 }
 
 .main {
-/* height: calc(100vh - 70px); */
+height: calc(100vh - 70px);
 width: 100%;
 overflow-y: scroll;
 overflow-x: hidden;
@@ -308,7 +317,6 @@ align-items: center;
 .t-op {
 font-size: 18px;
 letter-spacing: 0px;
-padding:2px 8px;
 }
 
 .items {
@@ -332,76 +340,3 @@ background: color  #926930c3 ;
 color: white;
 border-radius: 4px;
 }
-
-.styled-table {
-    text-align: center;
-    width:100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 1.1em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.styled-table thead tr {
-    text-align: center;
-    background-color: #ac8c61;
-    color: #ffffff;
-}
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #ac8c61;
-}
-.styled-table tbody tr td:last-child{
-    padding: 2px;
-}
-.approve-button {
-    background-color: #15b315;
-    height: 50px;
-    width: 50px;
-    border: 2px solid #146814;
-    color: #146814;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .approve-button:hover{
-    background-color: #146814;
-    color: #15b315;
-    border: 2px solid #15b315;
-  }
-
-  .reject-button {
-    background-color: #f53737;
-    height: 50px;
-    width: 50px;
-    border: 2px solid #851414;
-    color: #851414;;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .reject-button:hover{
-    background-color: #851414;
-    color: #f53737;
-    border: 2px solid #f53737;
-  }
