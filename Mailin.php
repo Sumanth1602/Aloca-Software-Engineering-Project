@@ -3,7 +3,7 @@
 namespace Sendinblue;
 
 /**
- * SendinBlue REST client
+ * SendinBlue REST clienth
  */
 class Mailin
 {
